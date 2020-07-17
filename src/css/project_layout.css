@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+  }
+
+html {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* SCREENS */
+#home_screen {}
+
+/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
+/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
+/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
+/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
+
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+
+#navbar_box {
+    position: absolute;
+    width: 100%;
+    height: 187px;
+    background-color: #2F2E2E;
+}
+
+.navbar_button {
+    background-color: #484747; /* Green */
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 16pt;
+    font-family: Helvetica, sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    /* display: inline-block; */
+}
+
+#home_button {
+    margin-left: 26%;
+    margin-top: 3%;
+}
+
+#catalog_button {
+    margin-left: 1%;
+}
+
+#license_button {
+    margin-left: 1%;
+}
+#contact_button {
+    margin-left: 1%;
+}
+
+#home_button:hover, #catalog_button:hover, #license_button:hover, #contact_button:hover {
+    background-color: black;
+    color:white;
+}
+
+#motion_container {
+    position: absolute;
+    width: 100%;
+    height: 883px;
+    top: 188px;
+    left: 0;
+    right: 0;
+}
+
+#motion_box {
+    position: relative;
+    width: 100%;
+    height: 883px;
+}
+
+#motion_text {
+    position: absolute;
+    text-align: center;
+    left: 33%;
+    bottom: 40%;
+    color: white;
+    font-weight: bold;
+    font-size: 25pt;
+    line-height: 1.2;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+#motion_text1 {
+    font-size:35pt;
+    font-family: Helvetica, sans-serif;
+    line-height: 0.5;
+}
+
+#motion_text2 {
+    font-size: 60pt;
+    font-family: Helvetica, sans-serif;
+}
+
+#motion_text3 {
+    font-size: 16pt;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+#motion_graybar1 {
+    width: 50px;
+    height: 40px;
+    color:darkgrey;
+}
+
+#motion_graybar2 {
+    width: 50px;
+    height: 40px;
+    color:darkgrey;
+}
+
+#motion_view_catalog {
+    position: relative;
+    top: 15px;
+    background-color: white; /* Green */
+    border: none;
+    color: steelblue;
+    font-weight: bolder;
+    font-size: 16pt;
+    font-family: Helvetica, sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+#motion_view_catalog:hover {
+    background-color: black;
+    color:white;
+}
