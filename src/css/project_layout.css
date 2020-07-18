@@ -1,12 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;
+    height: 150%;
   }
 
 html {
@@ -15,7 +14,19 @@ html {
 }
 
 /* SCREENS */
-#home_screen {}
+#home_screen {
+    /* Defining Grid Size */
+    display: grid;
+    grid-template-columns: 300px 600px 650px 370px;
+    grid-template-rows: [navbar] 125px 583px 300px 300px 300px;
+    flex-direction: column;
+    /* height: 2000px; */
+    /* width: 100%; */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
 
 /* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
 /* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
@@ -28,10 +39,20 @@ html {
 /* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
 
 #navbar_box {
-    position: absolute;
-    width: 100%;
-    height: 187px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1 ;
+    /* width: 100%; */
+    /* height: 14%; */
+    /* height: 125px; */
+    /* padding-top: 0.1px; */
     background-color: #2F2E2E;
+}
+
+#navbar_buttons_container {
+    margin-left: 30%; 
+    margin-top: 3.5%;
+    width:500px;
 }
 
 .navbar_button {
@@ -39,26 +60,15 @@ html {
     border: none;
     color: white;
     font-weight: bolder;
-    font-size: 16pt;
+    font-size: 11pt;
     font-family: Helvetica, sans-serif;
-    padding: 15px 32px;
+    padding: 8px 16px;
     text-align: center;
     /* display: inline-block; */
 }
 
-#home_button {
-    margin-left: 26%;
-    margin-top: 3%;
-}
-
-#catalog_button {
-    margin-left: 1%;
-}
-
-#license_button {
-    margin-left: 1%;
-}
-#contact_button {
+/* Spacing for buttons in navbar */
+#catalog_button, #license_button, #contact_button {
     margin-left: 1%;
 }
 
@@ -67,47 +77,53 @@ html {
     color:white;
 }
 
+/* MOTION BOX MOTION BOX MOTION BOX */
+/* MOTION BOX MOTION BOX MOTION BOX */
+/* MOTION BOX MOTION BOX MOTION BOX */
+/* MOTION BOX MOTION BOX MOTION BOX */
+/* MOTION BOX MOTION BOX MOTION BOX */
+
 #motion_container {
-    position: absolute;
-    width: 100%;
-    height: 883px;
-    top: 188px;
-    left: 0;
-    right: 0;
+    grid-row: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display:grid;
+    grid-template-columns: 400px 600px 450px 470px;
+    grid-template-rows: [navbar] 100px 100px 100px 100px;
 }
 
-#motion_box {
-    position: relative;
+#motion_gif {
+    /* position: absolute; */
+    grid-column-start: 1;
+    grid-column-end: 5;
     width: 100%;
-    height: 883px;
+    height: 583px;
 }
 
 #motion_text {
-    position: absolute;
+    /* position: relative; */
+    z-index: 10;
+    grid-column-start: 2;
+    grid-column-end: 4;
     text-align: center;
-    left: 33%;
-    bottom: 40%;
     color: white;
     font-weight: bold;
     font-size: 25pt;
-    line-height: 1.2;
-    font-family: poppins-semibold, poppins, sans-serif;
+    line-height: 1.3;
 }
 
 #motion_text1 {
-    font-size:35pt;
-    font-family: Helvetica, sans-serif;
+    font-size:23pt;
     line-height: 0.5;
 }
 
 #motion_text2 {
-    font-size: 60pt;
-    font-family: Helvetica, sans-serif;
+    font-size: 40pt;
 }
 
 #motion_text3 {
-    font-size: 16pt;
-    font-family: poppins-semibold, poppins, sans-serif;
+    font-size: 14pt;
 }
 
 #motion_graybar1 {
@@ -123,19 +139,135 @@ html {
 }
 
 #motion_view_catalog {
-    position: relative;
     top: 15px;
     background-color: white; /* Green */
     border: none;
     color: steelblue;
     font-weight: bolder;
-    font-size: 16pt;
+    font-size: 10pt;
     font-family: Helvetica, sans-serif;
-    padding: 15px 32px;
+    padding: 14px 25px;
     text-align: center;
 }
 
 #motion_view_catalog:hover {
     background-color: black;
     color:white;
+}
+
+/* CATALOG CATALOG CATALOG CATALOG */
+/* CATALOG CATALOG CATALOG CATALOG */
+/* CATALOG CATALOG CATALOG CATALOG */
+/* CATALOG CATALOG CATALOG CATALOG */
+
+#beats_catalogue_entire {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    height: 1000px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 560px 600px 250px 510px;
+    /* margin-top: 5%; */
+    /* padding-right: 20%; */
+}
+
+#catalog_title_container {
+    height: 100px; 
+    padding-top: 20px;
+
+
+    /* So the line and rectangle can enter */
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-rows: 15px 5px 15px 15x;
+    grid-template-columns: 320px 500px 600px 510px;
+}
+
+.line {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    height: 3px;
+    width: 1200px;
+    text-align:center;
+    background-color: #EDEBF2;
+
+    /* So the rectangle can be in middle */
+    display: grid;
+    grid-template-columns: 500px 300px 200px 300px;
+}
+
+.rectangle {
+    position: relative;
+    grid-column-start: 2;
+    bottom: 26px;
+    text-align: center;
+    z-index: 10;
+    height: 66px;
+    width: 210px;
+    /* background-color: #555; */
+    background-color: white;
+    border-radius:1px;
+    border-color: #EDEBF2;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+}
+
+.catalog_title_design {
+    position: relative;
+    top: 15px;
+    color: #525252;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Helvetica, sans-serif;
+    text-align:center;
+}
+
+#beats_catalogue_container {
+    height: 750px;
+    /* width: 1050px; */
+    width: 55%;
+    margin-top: 730px;
+    /* margin-top: 38%; */
+    /* margin-left: 448px; */
+    margin-left: 24%;
+    border-radius:1px;
+    border-color: #EDEBF2;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+}
+
+#paperWrap {
+    height: 500px;
+    width: 100px;
+
+}
+
+/* PRICING PRICING PRICING PRICING */
+/* PRICING PRICING PRICING PRICING */
+/* PRICING PRICING PRICING PRICING */
+/* PRICING PRICING PRICING PRICING */
+
+#pricing_title_container {
+    position: absolute;
+    /* display: block; */
+    /* width: 100%; */
+    height: 350px;
+    width: 55%;
+    /* top: 1000px; */
+    float: center;
+    padding-left: 100%;
+    
+}
+
+#pricing_rectangle {
+    top: 10px;
+}
+
+#pricing_line {
+    /* top: 0px; */
+
 }

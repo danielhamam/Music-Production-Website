@@ -13,7 +13,7 @@ export class MotionPicture extends Component {
         return (
     
           <div id="motion_container">
-            <img src={motionGif} id="motion_box" alt="Motion gif" />
+            <img src={motionGif} id="motion_gif" alt="Motion gif" />
             <div id="motion_text">
 
               {/* FIRST PHRASE */}
