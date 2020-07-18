@@ -176,7 +176,6 @@ html {
     height: 100px; 
     padding-top: 20px;
 
-
     /* So the line and rectangle can enter */
 
     grid-row-start: 1;
@@ -230,10 +229,6 @@ html {
     height: 750px;
     /* width: 1050px; */
     width: 55%;
-    margin-top: 730px;
-    /* margin-top: 38%; */
-    /* margin-left: 448px; */
-    margin-left: 24%;
     border-radius:1px;
     border-color: #EDEBF2;
     border-style: solid;
