@@ -14,11 +14,7 @@ export class BeatsCatalogue extends Component {
 
 render() {
   return (
-    <div > 
-        <div id="beats_catalogue_container"> 
-        
-        </div>
-
+    <div id="beats_catalogue_container"> 
 
       {/* <Paper className= "paperWrap" variant="outlined" >
 

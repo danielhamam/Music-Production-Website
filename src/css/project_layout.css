@@ -18,11 +18,9 @@ html {
     /* Defining Grid Size */
     display: grid;
     grid-template-columns: 300px 600px 650px 370px;
-    grid-template-rows: [navbar] 125px 583px 300px 300px 300px;
-    flex-direction: column;
+    grid-template-rows: 125px 583px 1000px 650px 500px;
     /* height: 2000px; */
     /* width: 100%; */
-    position: relative;
     margin-left: auto;
     margin-right: auto;
  
@@ -50,9 +48,9 @@ html {
 }
 
 #navbar_buttons_container {
-    margin-left: 30%; 
+    margin-left: 20%; 
     margin-top: 3.5%;
-    width:500px;
+    width:700px;
 }
 
 .navbar_button {
@@ -68,12 +66,12 @@ html {
 }
 
 /* Spacing for buttons in navbar */
-#catalog_button, #license_button, #contact_button {
-    margin-left: 1%;
+#catalog_button, #pricing_button, #contact_button, #kits_button {
+    margin-left: 2.5%;
 }
 
-#home_button:hover, #catalog_button:hover, #license_button:hover, #contact_button:hover {
-    background-color: black;
+#home_button:hover, #catalog_button:hover, #pricing_button:hover, #contact_button:hover, #kits_button:hover {
+    background-color: red;
     color:white;
 }
 
@@ -142,7 +140,7 @@ html {
     top: 15px;
     background-color: white; /* Green */
     border: none;
-    color: steelblue;
+    color: black;
     font-weight: bolder;
     font-size: 10pt;
     font-family: Helvetica, sans-serif;
@@ -151,7 +149,7 @@ html {
 }
 
 #motion_view_catalog:hover {
-    background-color: black;
+    background-color:red;
     color:white;
 }
 
@@ -226,9 +224,16 @@ html {
 }
 
 #beats_catalogue_container {
-    height: 750px;
-    /* width: 1050px; */
-    width: 55%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 4%;
+    margin-left: 34%;
+
+
+    height: 830px;
+    width: 1050px;
+    /* width: 55%; */
     border-radius:1px;
     border-color: #EDEBF2;
     border-style: solid;
@@ -246,16 +251,84 @@ html {
 /* PRICING PRICING PRICING PRICING */
 /* PRICING PRICING PRICING PRICING */
 
+#pricing_info {}
+
+#pricing_entire {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 600px;
+
+    /* So items can be on grid: */
+
+    display: grid;
+    grid-template-rows: 80px 50px 100px 100px;
+    grid-template-columns: 360px 300px 300px 300px 250px;
+}
+
 #pricing_title_container {
-    position: absolute;
-    /* display: block; */
-    /* width: 100%; */
-    height: 350px;
-    width: 55%;
-    /* top: 1000px; */
-    float: center;
-    padding-left: 100%;
+
+    height: 100px; 
+    padding-top: 20px;
+
+    /* So the line and rectangle can enter */
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
     
+    display: grid;
+    grid-template-rows: 15px 5px 15px 15px;
+    grid-template-columns: 320px 500px 600px 510px;
+    
+}
+
+.pricing_info_card {
+
+    /* So the contents of the card can go in the card */
+    display : grid;
+    width: 230px;
+    height: 465px;
+    
+    /* border-radius:1px; */
+    border-color: black;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+
+}
+
+.pricing_info_card_rectangle {
+    background: black;
+    width: 225px;
+    height: 37px;
+    text-align: center;
+}
+
+.pricing_info_rectangle_text {
+    color: white;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#pricing_info_card1 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#pricing_info_card2 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+#pricing_info_card3 {
+    grid-row-start: 3;
+    grid-column-start: 4;
+}
+
+#pricing_info_card4 {
+    grid-row-start: 3;
+    grid-column-start: 5;
 }
 
 #pricing_rectangle {
@@ -263,6 +336,73 @@ html {
 }
 
 #pricing_line {
-    /* top: 0px; */
+    
 
+}
+
+/* CONTACT CONTACT CONTACT CONTACT */
+/* CONTACT CONTACT CONTACT CONTACT */
+/* CONTACT CONTACT CONTACT CONTACT */
+/* CONTACT CONTACT CONTACT CONTACT */
+
+#contact_title_container {
+    
+    height: 100px; 
+    padding-top: 20px;
+
+    /* So the line and rectangle can enter */
+
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    display: grid;
+    grid-template-rows: 15px 5px 15px 15px;
+    grid-template-columns: 320px 500px 600px 510px;
+
+
+
+}
+
+#contact_entire {
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    /* display: grid;
+    grid-template-rows: 80px 50px 100px 100px;
+    grid-template-columns: 360px 300px 300px 300px 250px; */
+
+}
+
+#contact_info_container {
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 30px 10px 100px 100px;
+    grid-template-columns: 360px 300px 320px 500px 450px;
+}
+
+#contact_information {
+    grid-row-start: 3;
+    grid-column-start:2;
+    grid-column-end: 5;
+}
+
+#contact_submit_button {
+    height: 40px;
+    width: 80px;
+    border: none;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+#contact_submit_button:hover {
+    background-color: red;
+    /* color: black; */
 }

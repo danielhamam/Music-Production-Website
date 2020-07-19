@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import motionGif from '../../images/wallpaper.gif';
+import motionGif2 from '../../images/newimage.gif';
+import motionGif4 from '../../images/newimage_1.gif';
 import motionPic from '../../images/targetGif.gif';
+
 import grayBar from '../../images/gray_bar.png';
-// import 'react-slideshow-image/dist/styles.css';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import catalog_scrollFunction from "../navbar/Navbar.js"
 
 export class MotionPicture extends Component {
+
+  catalog_scrollFunction() {
+    let elmntToView = document.getElementById("catalog_title_container");
+    if (elmntToView == null) return;
+    else elmntToView.scrollIntoView({behavior: "smooth"}); 
+    }
+
 
     render() {
 
         return (
     
           <div id="motion_container">
-            <img src={motionGif} id="motion_gif" alt="Motion gif" />
+            <img src={motionGif4} id="motion_gif" alt="Motion gif" />
             <div id="motion_text">
 
               {/* FIRST PHRASE */}
@@ -34,7 +42,7 @@ export class MotionPicture extends Component {
               <br />
 
               {/* VIEW CATALOG BUTTON */}
-              <button id="motion_view_catalog"> VIEW CATALOG </button>
+              <button onClick={this.catalog_scrollFunction} id="motion_view_catalog"> VIEW CATALOG </button>
 
             </div>
           </div>
