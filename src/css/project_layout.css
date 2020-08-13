@@ -48,7 +48,7 @@ html {
 }
 
 #navbar_buttons_container {
-    margin-left: 20%; 
+    margin-left: 35%; 
     margin-top: 3.5%;
     width:700px;
 }
@@ -389,6 +389,16 @@ html {
     grid-row-start: 3;
     grid-column-start:2;
     grid-column-end: 5;
+}
+
+#contact_name, #contact_email, #contact_subject {
+    color: black;
+}
+
+#contact_message {
+    margin-top: 10px;
+    height: 80px;
+    color: black;
 }
 
 #contact_submit_button {
