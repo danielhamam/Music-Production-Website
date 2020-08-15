@@ -1,127 +1,56 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    min-height: 100%;
-    height: 150%;
-  }
-
-html {
-    margin: 0 auto;
-    width: 100%;
+#root {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	width: 100%;
 }
 
-/* SCREENS */
-#home_screen {
-    /* Defining Grid Size */
-    display: grid;
-    grid-template-columns: 300px 600px 650px 370px;
-    grid-template-rows: 125px 583px 1000px 650px 500px;
-    /* height: 2000px; */
-    /* width: 100%; */
-    margin-left: auto;
-    margin-right: auto;
- 
-}
-
-/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
-/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
-/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
-/* HOME SCREEN HOME SCREEN HOME SCREEN HOME SCREEN */
-
-/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
-/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
-/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
-/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
-
+/* Flex styles -------------------------------------------------*/
 #navbar_box {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row: 1 ;
-    /* width: 100%; */
-    /* height: 14%; */
-    /* height: 125px; */
-    /* padding-top: 0.1px; */
-    background-color: #2F2E2E;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	justify-content: center;
+    background-color: #2f2e2e;
+    height: 10vh;
 }
 
-#navbar_buttons_container {
-    margin-left: 35%; 
-    margin-top: 3.5%;
-    width:700px;
+.navbar_button:first-of-type {
+	margin-left: 2em;
+}
+
+.navbar_button:last-of-type {
+	margin-right: 2em;
 }
 
 .navbar_button {
-    background-color: #484747; /* Green */
-    border: none;
-    color: white;
-    font-weight: bolder;
-    font-size: 11pt;
-    font-family: Helvetica, sans-serif;
-    padding: 8px 16px;
-    text-align: center;
-    /* display: inline-block; */
+	display: flex;
+	background-color: #484747; /* Green */
+	border: none;
+	color: white;
+	font-weight: bolder;
+	font-size: 11pt;
+	font-family: Helvetica, sans-serif;
+	padding: .5vmin 1vmin;
+	text-align: center;
+	margin-right: 2em;
 }
-
-/* Spacing for buttons in navbar */
-#catalog_button, #pricing_button, #contact_button, #kits_button {
-    margin-left: 2.5%;
-}
-
-#home_button:hover, #catalog_button:hover, #pricing_button:hover, #contact_button:hover, #kits_button:hover {
-    background-color: red;
-    color:white;
-}
-
-/* MOTION BOX MOTION BOX MOTION BOX */
-/* MOTION BOX MOTION BOX MOTION BOX */
-/* MOTION BOX MOTION BOX MOTION BOX */
-/* MOTION BOX MOTION BOX MOTION BOX */
-/* MOTION BOX MOTION BOX MOTION BOX */
 
 #motion_container {
-    grid-row: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    display:grid;
-    grid-template-columns: 400px 600px 450px 470px;
-    grid-template-rows: [navbar] 100px 100px 100px 100px;
-}
+	margin-bottom: 30px;
+	padding: 30px;
+	color: white;
+	text-shadow: 0px 0px 5px #000;
+    background: url('/images/newimage_1.gif');
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
 
-#motion_gif {
-    /* position: absolute; */
-    grid-column-start: 1;
-    grid-column-end: 5;
-    width: 100%;
-    height: 583px;
-}
-
-#motion_text {
-    /* position: relative; */
-    z-index: 10;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 25pt;
-    line-height: 1.3;
-}
-
-#motion_text1 {
-    font-size:23pt;
-    line-height: 0.5;
-}
-
-#motion_text2 {
-    font-size: 40pt;
-}
-
-#motion_text3 {
-    font-size: 14pt;
 }
 
 #motion_graybar1 {
@@ -136,6 +65,34 @@ html {
     color:darkgrey;
 }
 
+
+#motion_text {
+    /* position: relative; */
+    z-index: 10;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25pt;
+    line-height: 1.3;
+}
+img {
+    max-width: 100%;
+}
+#motion_text1 {
+    font-size: 8vw;
+    line-height: 0.5;
+}
+
+#motion_text2 {
+    font-size: 5vw;
+}
+
+#motion_text3 {
+    font-size: 12pt
+}
+
 #motion_view_catalog {
     top: 15px;
     background-color: white; /* Green */
@@ -148,22 +105,12 @@ html {
     text-align: center;
 }
 
-#motion_view_catalog:hover {
-    background-color:red;
-    color:white;
-}
-
-/* CATALOG CATALOG CATALOG CATALOG */
-/* CATALOG CATALOG CATALOG CATALOG */
-/* CATALOG CATALOG CATALOG CATALOG */
-/* CATALOG CATALOG CATALOG CATALOG */
-
 #beats_catalogue_entire {
-    grid-row-start: 3;
+    /* grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: 5;
-    display: grid;
-    height: 1000px;
+    display: grid; */
+    height: 100vw;
     grid-template-rows: 100px 100px 100px 100px;
     grid-template-columns: 560px 600px 250px 510px;
     /* margin-top: 5%; */
@@ -172,35 +119,28 @@ html {
 
 #catalog_title_container {
     height: 100px; 
-    padding-top: 20px;
-
-    /* So the line and rectangle can enter */
-
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    display: grid;
-    grid-template-rows: 15px 5px 15px 15x;
-    grid-template-columns: 320px 500px 600px 510px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    
 }
 
+.catalog_title_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .line {
-    grid-row-start: 2;
-    grid-column-start: 2;
     height: 3px;
-    width: 1200px;
+    width: 100vw;
     text-align:center;
     background-color: #EDEBF2;
-
-    /* So the rectangle can be in middle */
-    display: grid;
-    grid-template-columns: 500px 300px 200px 300px;
 }
 
 .rectangle {
-    position: relative;
-    grid-column-start: 2;
-    bottom: 26px;
     text-align: center;
     z-index: 10;
     height: 66px;
@@ -211,6 +151,8 @@ html {
     border-color: #EDEBF2;
     border-style: solid;
     border-width: 3px 3px 3px 3px;
+    vertical-align: middle;
+    margin: 0 auto;
 }
 
 .catalog_title_design {
@@ -224,15 +166,9 @@ html {
 }
 
 #beats_catalogue_container {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-top: 4%;
-    margin-left: 34%;
-
-
+    margin: 10vmin;
     height: 830px;
-    width: 1050px;
+    width: 80vw;
     /* width: 55%; */
     border-radius:1px;
     border-color: #EDEBF2;
@@ -240,30 +176,11 @@ html {
     border-width: 3px 3px 3px 3px;
 }
 
-#paperWrap {
-    height: 500px;
-    width: 100px;
-
-}
-
-/* PRICING PRICING PRICING PRICING */
-/* PRICING PRICING PRICING PRICING */
-/* PRICING PRICING PRICING PRICING */
-/* PRICING PRICING PRICING PRICING */
-
-#pricing_info {}
-
 #pricing_entire {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    height: 600px;
-
-    /* So items can be on grid: */
-
-    display: grid;
-    grid-template-rows: 80px 50px 100px 100px;
-    grid-template-columns: 360px 300px 300px 300px 250px;
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  justify-items: center;
 }
 
 #pricing_title_container {
@@ -273,13 +190,7 @@ html {
 
     /* So the line and rectangle can enter */
 
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    
-    display: grid;
-    grid-template-rows: 15px 5px 15px 15px;
-    grid-template-columns: 320px 500px 600px 510px;
+   
     
 }
 
@@ -309,28 +220,6 @@ html {
     font-weight: bold;
     font-size: 16pt;
 }
-
-#pricing_info_card1 {
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-
-#pricing_info_card2 {
-    grid-row-start: 3;
-    grid-column-start: 3;
-}
-
-#pricing_info_card3 {
-    grid-row-start: 3;
-    grid-column-start: 4;
-}
-
-#pricing_info_card4 {
-    grid-row-start: 3;
-    grid-column-start: 5;
-}
-
 #pricing_rectangle {
     top: 10px;
 }
@@ -382,7 +271,7 @@ html {
 
     display: grid;
     grid-template-rows: 30px 10px 100px 100px;
-    grid-template-columns: 360px 300px 320px 500px 450px;
+    /* grid-template-columns: 360px 300px 320px 500px 450px; */
 }
 
 #contact_information {
