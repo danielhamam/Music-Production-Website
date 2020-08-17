@@ -10,6 +10,7 @@ import PricingInfoCard3 from './pricingInfo/PricingInfoCard3';
 import PricingInfoCard4 from './pricingInfo/PricingInfoCard4';
 import ContactTitle from './contact/ContactTitle';
 import ContactInfo from './contact/ContactInfo';
+import Footer from './websitefooter/Footer';
 
 
 
@@ -44,7 +45,7 @@ export class HomeScreen extends Component {
                <ContactTitle/>
                <ContactInfo/>
               </div>
-
+              <Footer/>
             </div>
         );
     }
