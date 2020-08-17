@@ -32,10 +32,12 @@ export class HomeScreen extends Component {
               {/* PRICING INFO */}
               <div id="pricing_entire">
                 <PricingInfoTitle/>
-                <PricingInfoCard1/>
-                <PricingInfoCard2/>
-                <PricingInfoCard3/>
-                <PricingInfoCard4/>
+                <div id="pricing_info_cards_container">
+                  <PricingInfoCard1/>
+                  <PricingInfoCard2/>
+                  <PricingInfoCard3/>
+                  <PricingInfoCard4/>
+                </div> 
               </div>
                {/* CONTACT */}
               <div id="contact_entire">
