@@ -333,6 +333,9 @@ img {
   grid-column-start: 2;
   grid-column-end: 5;
 }
+#contact_name:hover, #contact_email:hover, #contact_subject:hover, #contact_message:hover{
+  border: 2px solid #000;
+  }
 
 #contact_name,
 #contact_email,
