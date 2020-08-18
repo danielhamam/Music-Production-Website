@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-// import { isLogin } from "../../utils/authManager";
+import { isLogin } from "../../utils/authManager";
 const RouteWithLayout = (props) => {
   const {
     layout: Layout,
@@ -16,13 +16,13 @@ const RouteWithLayout = (props) => {
         {...rest}
         render={(matchProps) => (
           <>
-            {/* // isLogin() && restricted ? ( //  */}
-            {/* <Redirect to="/media" /> */}
-            {/* // ) : ( */}
-            <Layout>
-              <Component {...matchProps} />
-            </Layout>
-            {/* // ) */}
+            {isLogin() && restricted ? (
+              <Redirect to="/admin/dashboard" />
+            ) : (
+              <Layout>
+                <Component {...matchProps} />
+              </Layout>
+            )}
           </>
         )}
       />
@@ -33,13 +33,13 @@ const RouteWithLayout = (props) => {
         {...rest}
         render={(matchProps) => (
           <>
-            {/* // isLogin() ? ( */}
-            <Layout>
-              <Component {...matchProps} />
-            </Layout>
-            {/* // ) : ( */}
-            <Redirect to="/admin" />
-            {/* // ) */}
+            {isLogin() ? (
+              <Layout>
+                <Component {...matchProps} />
+              </Layout>
+            ) : (
+              <Redirect to="/" />
+            )}
           </>
         )}
       />
