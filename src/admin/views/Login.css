@@ -1,0 +1,125 @@
+.st_form_login {
+  padding: 30px 25px;
+  background: #0c0032;
+  border-radius: 5px;
+  /* background: linear-gradient(
+    -205deg,
+    rgb(39, 48, 130),
+    rgb(18, 18, 61),
+    rgb(39, 48, 129)
+  ); */
+}
+
+.Form_Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form_Header img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.st_btn_login {
+  color: #fff !important;
+  font-size: .9rem;
+  letter-spacing: 0.05em !important;
+  font-weight: bold !important;
+}
+
+.forgot_pass {
+  color: #525f7f;
+  margin: 5px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+.forgot_pass a {
+  color: #b2bdd8;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  margin-left: 3px;
+  font-weight: bold;
+}
+
+/* input Design */
+.st_text_input {
+  position: relative;
+  margin-bottom: 20px;
+  height: 45px;
+}
+
+.st_text_input .form-control:focus ~ label,
+label.up {
+  font-size: 0.7rem;
+  position: absolute;
+  top: -10px;
+  left: 3px;
+  background-color: #2222221f;
+  /* background-color: #2222221f; */
+  padding: 0 7px;
+  /* color: #525f7f; */
+  letter-spacing: 0.05em;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.st_text_input label {
+  font-size: 1rem;
+  position: absolute;
+  top: 25%;
+  left: 3px;
+  background-color: #0000;
+  padding: 0 7px;
+  /* color: #5a5a5a; */
+  letter-spacing: 0.05em;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.st_text_input .form-control.is-invalid {
+  /* border-color: #dc3545 !important; */
+  box-shadow: inset 1px 1px 1px 0px #dc35462f, 1px 1px 0px 0px #dc35466c;
+}
+
+.st_text_input .form-control {
+  border: 1px solid #0f0e32;
+  border-radius: 3px;
+  font-size: .9rem;
+  letter-spacing: 0em;
+  color: #fff;
+  padding: 6px 10px 6px 10px;
+  height: 50px;
+  position: relative;
+  background: #0f0e32;
+  box-shadow: inset 0px 1px 1px 0px #00000030, 0px 1px 0px 0px #44444430;
+}
+
+.st_text_input .form-control:focus {
+  color: #e9f4ff;
+  border-color: #80bdff00;
+  outline: 0;
+  padding: 15px 10px 6px 10px;
+}
+
+.st_text_input .form-control::placeholder {
+  /* color: #525f7f; */
+  letter-spacing: 0.05em;
+  transition: all 0.1s;
+  font-size: .9rem;
+}
+
+.st_text_input .form-control:focus::placeholder {
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+/* global button design */
+.btn {
+    font-size: .9rem;
+    line-height: 1.8;
+  }
+  

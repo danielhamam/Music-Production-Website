@@ -33,7 +33,8 @@ class Navbar extends Component {
     render() {
 
         return (
-            
+            <>
+			
 			<header id="navbar_box"> 
 				<button type="button" onClick={this.home_scrollFunction} id="home_button" className="navbar_button"> HOME </button>
 				<button type="button" onClick={this.catalog_scrollFunction} id="catalog_button" className="navbar_button"> BEAT CATALOG </button>
@@ -41,7 +42,7 @@ class Navbar extends Component {
 				<button type="button" onClick={this.pricing_scrollFunction} id= "pricing_button" className="navbar_button"> LICENSE INFO </button>
 				<button type="button" onClick={this.contact_scrollFunction} id="contact_button" className="navbar_button"> CONTACT </button>
 			</header>
-
+			</>
 	  );
     }
 }
