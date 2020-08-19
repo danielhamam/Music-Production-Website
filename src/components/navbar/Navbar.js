@@ -8,7 +8,7 @@ import {
   FaSpotify,
 } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
-
+import "./Navbar.css";
 class Navbar extends Component {
   state = {
     open: false,
@@ -45,32 +45,34 @@ class Navbar extends Component {
   render() {
     return (
       <>
-        <div className="social p-0">
-          <div className="social container">
-            <span>
-              CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO YOUR
-              CART TO APPLY DISCOUNT!
-            </span>
-            <div className="d-none d-md-block">
-              <a href="https://www.google.com">
-                <FaSoundcloud className="mx-1 iconsSocial" />
-              </a>
-              <a href="https://www.google.com">
-                <FaTwitter className="mx-1 iconsSocial" />
-              </a>
-              <a href="https://www.google.com">
-                <FaYoutube className="mx-1 iconsSocial" />
-              </a>
-              <a href="https://www.google.com">
-                <FaInstagram className="mx-1 iconsSocial" />
-              </a>
-              <a href="https://www.google.com">
-                <FaSpotify className="mx-1 iconsSocial" />
-              </a>
+        <div style={{ background: "#2f2e2e" }}>
+          <div className="social p-0" style={{margin: "0px 85px", height: 35 }}>
+            <div className="social container">
+              <span style={{fontSize: 11}}>
+                CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO
+                YOUR CART TO APPLY DISCOUNT!
+              </span>
+              <div className="d-none d-md-block">
+                <a href="https://www.google.com" >
+                  <FaSoundcloud className="mx-1 iconsSocial" style={{fontSize: 16}}/>
+                </a>
+                <a href="https://www.google.com" >
+                  <FaTwitter className="mx-1 iconsSocial" style={{fontSize: 16}}/>
+                </a>
+                <a href="https://www.google.com" >
+                  <FaYoutube className="mx-1 iconsSocial" style={{fontSize: 16}}/>
+                </a>
+                <a href="https://www.google.com" >
+                  <FaInstagram className="mx-1 iconsSocial" style={{fontSize: 16}}/>
+                </a>
+                <a href="https://www.google.com" >
+                  <FaSpotify className="mx-1 iconsSocial" style={{fontSize: 16}}/>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <header id="navbar_box">
+        <header id="navbar_box" style={{padding: 45}}>
           <div className="container d-flex justify-conetnt-start align-items-center flex-row">
             <div className="d-flex d-md-none justify-content-between align-items-center">
               <img
@@ -173,6 +175,7 @@ class Navbar extends Component {
                   onClick={this.home_scrollFunction}
                   id="home_button"
                   className="navbar_button"
+                  style={{padding: 20}}
                 >
                   {" "}
                   HOME{" "}
@@ -182,6 +185,7 @@ class Navbar extends Component {
                   onClick={this.catalog_scrollFunction}
                   id="catalog_button"
                   className="navbar_button"
+                  style={{padding: 20}}
                 >
                   {" "}
                   BEAT CATALOG{" "}
@@ -192,6 +196,7 @@ class Navbar extends Component {
                   onClick={this.pricing_scrollFunction}
                   id="pricing_button"
                   className="navbar_button"
+                  style={{padding: 20}}
                 >
                   {" "}
                   LICENSE INFO{" "}
@@ -201,6 +206,7 @@ class Navbar extends Component {
                   onClick={this.contact_scrollFunction}
                   id="contact_button"
                   className="navbar_button"
+                  style={{padding: 20}}
                 >
                   {" "}
                   CONTACT{" "}

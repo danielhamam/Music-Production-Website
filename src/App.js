@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, HashRouter } from "react-router-dom";
 import RouteWithLayout from "./components/routeWithLayout/RouteWithLayout";
 // layout
 import MainView from "./layout/main/MainView";
@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter>
         <Switch>
           {/* Client routes */}
           <RouteWithLayout
@@ -48,7 +48,7 @@ class App extends Component {
             access="private"
           />
         </Switch>
-      </Router>
+      </HashRouter>
     );
   }
 }

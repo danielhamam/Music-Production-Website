@@ -32,7 +32,7 @@
 }
 
 .navbar_button:last-of-type {
-  margin-right: 2em;
+  margin-right: 3em;
 }
 
 .navbar_button {
@@ -45,7 +45,7 @@
   font-family: Helvetica, sans-serif;
   padding: 0.5vmin 1vmin;
   text-align: center;
-  margin-right: 2em;
+  margin-right: 1em;
   height: 40px;
   display: flex;
   justify-content: center;

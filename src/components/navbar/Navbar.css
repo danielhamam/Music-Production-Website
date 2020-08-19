@@ -1,0 +1,32 @@
+@media (max-width: 360px) {
+    .social{
+        margin: 0px !important;
+    }
+    .bar_menu{
+        margin-left: 200%;
+    }
+  }
+  @media (max-width: 411px) {
+    .social{
+        margin: 0px !important;
+    }
+    .bar_menu{
+        margin-left: 200%;
+    }
+  }
+  @media (max-width: 320px) {
+    .social{
+        margin: 0px !important;
+    }
+    .bar_menu{
+        margin-left: 180%;
+    }
+  }
+  @media (max-width: 414px) {
+    .social{
+        margin: 0px !important;
+    }
+    .bar_menu{
+        margin-left: 180%;
+    }
+  }
