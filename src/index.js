@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/project_layout.css';
 import './css/project_style.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+ import 'jquery/dist/jquery';
 import App from './App';
 
 // redux setup
