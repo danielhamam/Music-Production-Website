@@ -23,6 +23,7 @@
   justify-content: flex-start;
   background-color: #2f2e2e;
   height: 7vh;
+  z-index: 999;
   /* padding: 0 100px; */
 }
 
@@ -724,4 +725,52 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .dots:hover {
   border-radius: 0px;
   transition: 0.5s;
+}
+
+/* side menu */
+.sideMenu_wrapper {
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  background-color: #2f2f30;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 100vw;
+  opacity: 0;
+  transition: 0.5s;
+  animation-direction: alternate-reverse;
+}
+.bg {
+  width: 0;
+  height: 200vw;
+  position: absolute;
+  background: #1f1f1f;
+  /* z-index: 4; */
+  margin-left: 20vw;
+  top: 0;
+  transition: 0.5s;
+}
+.sideMenu_wrapper.open .bg {
+  width: 90vw;
+  transition: 0.5s;
+} 
+.sideMenu_wrapper.open {
+  opacity: 1;
+  width: 100vw;
+  transition: 0.5s;
+  left: 0vw;
+}
+
+.bar_menu {
+  border: 1px solid #fff2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 999999;
+  margin-left: 65vw;
 }

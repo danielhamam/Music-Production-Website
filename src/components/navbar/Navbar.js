@@ -7,9 +7,16 @@ import {
   FaInstagram,
   FaSpotify,
 } from "react-icons/fa";
+import { FiMenu, FiX } from "react-icons/fi";
 
 class Navbar extends Component {
-  state = {};
+  state = {
+    open: false,
+  };
+
+  _handelOpen = () => {
+    this.setState({ open: !this.state.open });
+  };
 
   home_scrollFunction() {
     let elmntToView = document.getElementById("home_screen");
@@ -71,7 +78,89 @@ class Navbar extends Component {
                 style={{ width: "60px", height: "40px" }}
                 className="d-block d-md-none"
               />
+              <div
+                className="bar_menu"
+                onClick={() => {
+                  this._handelOpen();
+                }}
+              >
+                {this.state.open ? <FiX /> : <FiMenu />}
+              </div>
+              <div className={`sideMenu_wrapper ${this.state.open && "open"} `}>
+                <div
+                  className=" d-flex flex-column justify-content-center align-items-center "
+                  style={{
+                    position: "absolute",
+                    width: "100%",
+                    zIndex: "99",
+                    paddingTop: "30px",
+                  }}
+                >
+                  <button
+                    type="button"
+                    onClick={this.home_scrollFunction}
+                    id="home_button"
+                    className="navbar_button"
+                    style={{ width: "175px", height: 27, margin: "10px 0" }}
+                  >
+                    {" "}
+                    HOME{" "}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={this.catalog_scrollFunction}
+                    id="catalog_button"
+                    className="navbar_button"
+                    style={{ width: "175px", height: 27, margin: "10px 0" }}
+                  >
+                    {" "}
+                    BEAT CATALOG{" "}
+                  </button>
+                  {/* <button type="button" id="kits_button" className="navbar_button" > DRUM KITS </button> */}
+                  <button
+                    type="button"
+                    onClick={this.pricing_scrollFunction}
+                    id="pricing_button"
+                    className="navbar_button"
+                    style={{ width: "175px", height: 27, margin: "10px 0" }}
+                  >
+                    {" "}
+                    LICENSE INFO{" "}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={this.contact_scrollFunction}
+                    id="contact_button"
+                    className="navbar_button"
+                    style={{ width: "175px", height: 27, margin: "10px 0" }}
+                  >
+                    {" "}
+                    CONTACT{" "}
+                  </button>
+                  <div style={{ marginTop: "50vh" }}>
+                    <div className="">
+                      <a href="https://www.google.com">
+                        <FaSoundcloud className="mx-1 iconsSocial" />
+                      </a>
+                      <a href="https://www.google.com">
+                        <FaTwitter className="mx-1 iconsSocial" />
+                      </a>
+                      <a href="https://www.google.com">
+                        <FaYoutube className="mx-1 iconsSocial" />
+                      </a>
+                      <a href="https://www.google.com">
+                        <FaInstagram className="mx-1 iconsSocial" />
+                      </a>
+                      <a href="https://www.google.com">
+                        <FaSpotify className="mx-1 iconsSocial" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg"></div>
+              </div>
             </div>
+
             <div className="d-flex justify-content-start align-items-center">
               <img
                 src="/wp2487509_edited.webp"
