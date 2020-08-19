@@ -5,4 +5,16 @@ import './css/project_style.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// redux setup
+import { Provider } from "react-redux";
+import configureStore from "./store";
+const store = configureStore();
+
+ReactDOM.render(
+    <Provider store={store}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Provider>,
+    document.getElementById('root')
+  );

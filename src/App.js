@@ -38,13 +38,14 @@ class App extends Component {
             component={Login}
             layout={MinimalView}
             access="public"
+            restricted={true}
           />
            <RouteWithLayout
             exact
             path="/admin/dashboard"
             component={Dashboard}
             layout={MinimalView}
-            access="public"
+            access="private"
           />
         </Switch>
       </Router>
