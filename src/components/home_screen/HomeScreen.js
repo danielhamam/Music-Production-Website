@@ -82,7 +82,7 @@ export class HomeScreen extends Component {
         <div className="moveToTop" id="moveToTop">
           <FiChevronUp />
         </div>
-        <div className="sideMenuDots">
+        <div className="sideMenuDots d-none d-md-none">
           <a href="#beats_catalogue_entire" className="dots scroll"></a>
           <a href="#pricing_title_container" className="dots scroll"></a>
           <a href="#contact_entire" className="dots scroll"></a>

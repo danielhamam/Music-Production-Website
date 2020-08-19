@@ -30,6 +30,7 @@ export class BeatsCatalogue extends Component {
             textAlign: "center",
             marginTop: "-25px",
           }}
+          className='d-none d-md-block'
         >
           *Audio files and contracts are delivered upon payment completion. All
           sales are final and non-refundable. By purchasing you agree to these

@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 // import {Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-bootstrap';
-import {FaSoundcloud, FaTwitter, FaYoutube, FaInstagram, FaSpotify } from 'react-icons/fa';
+import {
+  FaSoundcloud,
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+  FaSpotify,
+} from "react-icons/fa";
 
 class Navbar extends Component {
   state = {};
@@ -38,55 +44,80 @@ class Navbar extends Component {
               CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO YOUR
               CART TO APPLY DISCOUNT!
             </span>
-            <div>
-              <a href='https://www.google.com' ><FaSoundcloud className='mx-1 iconsSocial' /></a>
-              <a href='https://www.google.com' ><FaTwitter className='mx-1 iconsSocial' /></a>
-              <a href='https://www.google.com' ><FaYoutube className='mx-1 iconsSocial' /></a>
-              <a href='https://www.google.com' ><FaInstagram className='mx-1 iconsSocial' /></a>
-              <a href='https://www.google.com' ><FaSpotify className='mx-1 iconsSocial' /></a>
+            <div className="d-none d-md-block">
+              <a href="https://www.google.com">
+                <FaSoundcloud className="mx-1 iconsSocial" />
+              </a>
+              <a href="https://www.google.com">
+                <FaTwitter className="mx-1 iconsSocial" />
+              </a>
+              <a href="https://www.google.com">
+                <FaYoutube className="mx-1 iconsSocial" />
+              </a>
+              <a href="https://www.google.com">
+                <FaInstagram className="mx-1 iconsSocial" />
+              </a>
+              <a href="https://www.google.com">
+                <FaSpotify className="mx-1 iconsSocial" />
+              </a>
             </div>
           </div>
         </div>
         <header id="navbar_box">
           <div className="container d-flex justify-conetnt-start align-items-center flex-row">
-            <img src="/wp2487509_edited.webp" style={{ width: "63px" }} />
-            <button
-              type="button"
-              onClick={this.home_scrollFunction}
-              id="home_button"
-              className="navbar_button"
-            >
-              {" "}
-              HOME{" "}
-            </button>
-            <button
-              type="button"
-              onClick={this.catalog_scrollFunction}
-              id="catalog_button"
-              className="navbar_button"
-            >
-              {" "}
-              BEAT CATALOG{" "}
-            </button>
-            {/* <button type="button" id="kits_button" className="navbar_button" > DRUM KITS </button> */}
-            <button
-              type="button"
-              onClick={this.pricing_scrollFunction}
-              id="pricing_button"
-              className="navbar_button"
-            >
-              {" "}
-              LICENSE INFO{" "}
-            </button>
-            <button
-              type="button"
-              onClick={this.contact_scrollFunction}
-              id="contact_button"
-              className="navbar_button"
-            >
-              {" "}
-              CONTACT{" "}
-            </button>
+            <div className="d-flex justify-content-between align-items-center">
+              <img
+                src="https://static.wixstatic.com/media/2de498_246231f70b8d47ff8dc8a729352d828c~mv2.png/v1/fill/w_126,h_80,al_c,q_85,usm_0.66_1.00_0.01/wp2487509_edited.webp"
+                style={{ width: "60px", height: "40px" }}
+                className="d-block d-md-none"
+              />
+            </div>
+            <div className="d-flex justify-content-start align-items-center">
+              <img
+                src="/wp2487509_edited.webp"
+                style={{ width: "63px" }}
+                className="d-none d-md-block"
+              />
+              <div className="d-none d-md-flex justify-content-start align-items-start ">
+                <button
+                  type="button"
+                  onClick={this.home_scrollFunction}
+                  id="home_button"
+                  className="navbar_button"
+                >
+                  {" "}
+                  HOME{" "}
+                </button>
+                <button
+                  type="button"
+                  onClick={this.catalog_scrollFunction}
+                  id="catalog_button"
+                  className="navbar_button"
+                >
+                  {" "}
+                  BEAT CATALOG{" "}
+                </button>
+                {/* <button type="button" id="kits_button" className="navbar_button" > DRUM KITS </button> */}
+                <button
+                  type="button"
+                  onClick={this.pricing_scrollFunction}
+                  id="pricing_button"
+                  className="navbar_button"
+                >
+                  {" "}
+                  LICENSE INFO{" "}
+                </button>
+                <button
+                  type="button"
+                  onClick={this.contact_scrollFunction}
+                  id="contact_button"
+                  className="navbar_button"
+                >
+                  {" "}
+                  CONTACT{" "}
+                </button>
+              </div>
+            </div>
           </div>
         </header>
       </>
