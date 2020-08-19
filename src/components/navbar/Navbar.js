@@ -72,7 +72,7 @@ class Navbar extends Component {
         </div>
         <header id="navbar_box">
           <div className="container d-flex justify-conetnt-start align-items-center flex-row">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex d-md-none justify-content-between align-items-center">
               <img
                 src="https://static.wixstatic.com/media/2de498_246231f70b8d47ff8dc8a729352d828c~mv2.png/v1/fill/w_126,h_80,al_c,q_85,usm_0.66_1.00_0.01/wp2487509_edited.webp"
                 style={{ width: "60px", height: "40px" }}
@@ -161,7 +161,7 @@ class Navbar extends Component {
               </div>
             </div>
 
-            <div className="d-flex justify-content-start align-items-center">
+            <div className="d-md-flex d-none justify-content-start align-items-center">
               <img
                 src="/wp2487509_edited.webp"
                 style={{ width: "63px" }}

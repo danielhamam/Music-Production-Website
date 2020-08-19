@@ -203,85 +203,6 @@ img {
   align-items: center;
 }
 
-@media only screen and (max-width: 575px) {
-  .rectangle {
-    width: fit-content;
-    height: 35px;
-    padding: 0 10px;
-  }
-  .catalog_title_design {
-    position: relative;
-    top: 6px !important;
-    color: #525252;
-    font-weight: 500 !important;
-    font-size: 16px !important;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-  }
-  .line {
-    width: 90vw;
-  }
-
-  #catalog_title_container {
-    height: 55px;
-  }
-  #motion_text2 {
-    font-size: 25px;
-  }
-  #motion_graybar1,
-  #motion_graybar2 {
-    width: 65px;
-    height: 3px;
-    margin: 0;
-  }
-  #motion_view_catalog {
-    transform: scale(0.8);
-  }
-  #motion_text3 {
-    font-size: 10px;
-    font-family: unset;
-  }
-  #beats_catalogue_container {
-    margin: 5vmin !important;
-    margin-left: 5% !important;
-    height: 816px !important;
-    /* height: 88vh; */
-    width: 91vw !important;
-    /* width: 55%; */
-    border-radius: 1px;
-    border-color: #edebf2;
-    border-style: solid;
-    border-width: 3px 3px 3px 3px;
-    overflow: hidden;
-    overflow-y: auto;
-  }
-  #pricing_title_container {
-    height: 75px !important;
-    margin-bottom: -78px;
-  }
-  #pricing_info_cards_container {
-    padding: 0px !important;
-    width: 125vw !important;
-    margin: 0px -81px !important;
-  }
-  [id^="pricing_info_card"] {
-    margin: 0 !important;
-    width: 220px !important;
-    overflow: hidden !important;
-    transform: scale(0.85) !important;
-    box-shadow: 0px 3px 60px -13px #0000004d;
-  }
-  .pricing_info_card {
-    border-width: 2px 0 !important;
-  }
-  #pricing_info_cards_container {
-    box-shadow: none;
-  }
-  #contact_title_container {
-    height: 40px !important;
-  }
-}
-
 .btnbtn-text {
   width: 100%;
   text-align: center;
@@ -754,7 +675,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .sideMenu_wrapper.open .bg {
   width: 90vw;
   transition: 0.5s;
-} 
+}
 .sideMenu_wrapper.open {
   opacity: 1;
   width: 100vw;
@@ -773,4 +694,94 @@ textarea.materialize-textarea:focus:not([readonly]) {
   color: #fff;
   z-index: 999999;
   margin-left: 65vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  [id^="pricing_info_card"] {
+    margin: 0px;
+    transform: scale(0.8);
+  }
+  #pricing_info_cards_container {
+    margin-left: -28vw;
+    width: 132vw;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .rectangle {
+    width: fit-content;
+    height: 35px;
+    padding: 0 10px;
+  }
+  .catalog_title_design {
+    position: relative;
+    top: 6px !important;
+    color: #525252;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+  }
+  .line {
+    width: 90vw;
+  }
+
+  #catalog_title_container {
+    height: 55px;
+  }
+  #motion_text2 {
+    font-size: 25px;
+  }
+  #motion_graybar1,
+  #motion_graybar2 {
+    width: 65px;
+    height: 3px;
+    margin: 0;
+  }
+  #motion_view_catalog {
+    transform: scale(0.8);
+  }
+  #motion_text3 {
+    font-size: 10px;
+    font-family: unset;
+  }
+  #beats_catalogue_container {
+    margin: 5vmin !important;
+    margin-left: 5% !important;
+    height: 816px !important;
+    /* height: 88vh; */
+    width: 91vw !important;
+    /* width: 55%; */
+    border-radius: 1px;
+    border-color: #edebf2;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  #pricing_title_container {
+    height: 75px !important;
+    margin-bottom: -78px;
+  }
+  #pricing_info_cards_container {
+    padding: 0px !important;
+    width: 125vw !important;
+    margin: 0px -81px !important;
+  }
+  [id^="pricing_info_card"] {
+    margin: 0 !important;
+    width: 220px !important;
+    overflow: hidden !important;
+    transform: scale(0.85) !important;
+    box-shadow: 0px 3px 60px -13px #0000004d;
+  }
+  .pricing_info_card {
+    border-width: 2px 0 !important;
+  }
+  #pricing_info_cards_container {
+    box-shadow: none;
+  }
+  #contact_title_container {
+    height: 40px !important;
+  }
 }
