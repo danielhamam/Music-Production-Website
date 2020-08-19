@@ -12,16 +12,18 @@
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+  background-color: #fff;
 }
 
 /* Flex styles -------------------------------------------------*/
 #navbar_box {
   display: flex;
-  align-items: center;
-  position: sticky;
-  justify-content: center;
-  background-color: #2f2e2e;
-  height: 10vh;
+    align-items: center;
+    position: sticky;
+    justify-content: flex-start;
+    background-color: #2f2e2e;
+    height: 10vh;
+    padding: 0 100px;
 }
 
 .navbar_button:first-of-type {
@@ -43,6 +45,16 @@
   padding: 0.5vmin 1vmin;
   text-align: center;
   margin-right: 2em;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.navbar_button:hover {
+  background-color: #000000;
+  transition: 0.3s;
 }
 
 #motion_container {
