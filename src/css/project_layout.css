@@ -183,6 +183,7 @@ img {
   /* margin-top: 3%; */
   height: 2px;
   width: 80vw;
+  max-width: 985px;
   text-align: center;
   background-color: #edebf2;
   align-items: center;
@@ -229,8 +230,10 @@ img {
   margin-left: 10%;
   height: 830px;
   /* height: 88vh; */
-  width: 80vw;
+  /* width: 80vw; */
   /* width: 55%; */
+  max-width: 985px;
+  margin: auto;
   border-radius: 1px;
   border-color: #edebf2;
   border-style: solid;
@@ -372,6 +375,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 985px;
+  margin: auto;
 }
 
 #contact_information {

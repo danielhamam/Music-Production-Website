@@ -5,11 +5,11 @@ class Footer extends Component {
     return (
       <div id="footer_entire">
         <div id="footer_line"></div>
-        <div id="footer_box">
+        <div id="footer_box" style={{background: "#4f4f4f"}}>
           <div className="container d-flex flex-wrap justify-content-between align-items-center">
-            <div className="text-muted">
+            <div style={{color: "#BEBCC2"}}>
               {" "}
-              <span> Copyright 2020</span> <strong> © prodbyhamam </strong>{" "}
+              <span > Copyright 2020</span> <strong> © prodbyhamam </strong>{" "}
             </div>
             <div>
               <img
