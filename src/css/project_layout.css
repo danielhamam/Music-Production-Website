@@ -168,6 +168,7 @@ img {
   max-width: 100vw;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .catalog_title_item {
@@ -249,10 +250,12 @@ img {
 }
 
 #pricing_title_container {
-  height: 170px;
+  height: 100px;
   max-width: 100vw;
   display: flex;
   justify-content: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
   /* height: 80vh;
     width: 15vw; */
   /* padding-top: 20px; */
@@ -333,11 +336,11 @@ img {
 /* CONTACT CONTACT CONTACT CONTACT */
 
 #contact_title_container {
-  height: 120px;
+  height: 100px;
   max-width: 100vw;
   display: flex;
   justify-content: center;
-
+  margin-top: -95px;
   /* So the line and rectangle can enter */
   /* 
     grid-row-start: 5;
@@ -458,7 +461,13 @@ img {
   #footer_box {
     font-size: 14px;
   }
+  #pricing_title_container {
+    margin-top: -6px;
+  }
 
+  #contact_title_container {
+    margin-top: -14%;
+  }
   #footer_box .text-muted {
     font-size: 12px;
   }
