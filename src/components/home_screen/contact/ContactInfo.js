@@ -46,7 +46,7 @@ export class ContactInfo extends Component {
       <div id="contact_info_container">
         <div id="contact_information">
           <form onSubmit={this.handleSubmitForm}>
-            <label> Your Name(required) </label>
+            <label> Your Name (required) </label>
             <input
               id="contact_name"
               type="text"
@@ -55,7 +55,7 @@ export class ContactInfo extends Component {
               value={name}
               onChange={(e) => this.setState({ name: e.target.value })}
             />
-            <label> Your Email(required) </label>
+            <label> Your Email (required) </label>
             <input
               id="contact_email"
               type="email"

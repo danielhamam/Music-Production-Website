@@ -9,7 +9,7 @@ class Footer extends Component {
           <div className="container d-flex flex-wrap justify-content-between align-items-center">
             <div className="text-muted">
               {" "}
-              <span> Copyright 2020</span> <strong> © Sazz Beats </strong>{" "}
+              <span> Copyright 2020</span> <strong> © prodbyhamam </strong>{" "}
             </div>
             <div>
               <img

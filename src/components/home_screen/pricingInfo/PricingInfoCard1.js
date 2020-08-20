@@ -13,7 +13,7 @@ export class PricingInfoCard1 extends Component {
               <div className="price">$12.99</div>
             </div>
             <div className="text-muted text-uppercase sub-text">
-              non exclusice
+              non exclusive
             </div>
             <ul className='px-4 py-1'>
               <li className="border-bottom">
@@ -35,7 +35,7 @@ export class PricingInfoCard1 extends Component {
                 <div className="text-muted sub-text my-2">Use For a Single <br/> Commercial Release </div>
               </li>
               <li className="border-bottom">
-                <div className="text-muted sub-text my-2">--Must Credit-- <br /> "Sazz Beats" </div>
+                <div className="text-muted sub-text my-2">--Must Credit-- <br /> "Hamam" </div>
               </li>
             </ul>
           </div>
