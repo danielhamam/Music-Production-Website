@@ -3,7 +3,7 @@
         margin: 0px !important;
     }
     .bar_menu{
-        margin-left: 200%;
+        /* margin-left: 200%; */
     }
   }
   @media (max-width: 411px) {
@@ -11,7 +11,7 @@
         margin: 0px !important;
     }
     .bar_menu{
-        margin-left: 200%;
+        /* margin-left: 200%; */
     }
   }
   @media (max-width: 320px) {
@@ -19,7 +19,7 @@
         margin: 0px !important;
     }
     .bar_menu{
-        margin-left: 180%;
+        /* margin-left: 180%; */
     }
   }
   @media (max-width: 414px) {
@@ -27,6 +27,6 @@
         margin: 0px !important;
     }
     .bar_menu{
-        margin-left: 180%;
+        /* margin-left: 180%; */
     }
   }

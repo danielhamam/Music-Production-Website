@@ -24,6 +24,7 @@
   background-color: #2f2e2e;
   height: 7vh;
   z-index: 999;
+  padding: 45px;
   /* padding: 0 100px; */
 }
 
@@ -77,19 +78,19 @@
 #motion_graybar1 {
   color: darkgrey;
   width: 30px;
-  height: 5px;
+  height: 3px;
   object-fit: cover;
-  opacity: 0.5;
-  margin: -5px 0 0;
+  opacity: 0.4;
+  margin: 10px 0 0;
 }
 
 #motion_graybar2 {
   color: darkgrey;
   width: 30px;
-  height: 5px;
+  height: 3px;
   object-fit: cover;
-  opacity: 0.5;
-  margin: -25px 0 0;
+  opacity: 0.4;
+  margin: 0px 0 0;
 }
 
 #motion_text {
@@ -112,6 +113,7 @@ img {
   line-height: 0.5;
   font-weight: bold;
   letter-spacing: 0.05em;
+  font-family: 'Poppins', sans-serif;
 }
 @media only screen and (max-width: 500px) {
   #motion_text1 {
@@ -121,10 +123,13 @@ img {
 
 #motion_text2 {
   font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 #motion_text3 {
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #motion_view_catalog {
@@ -134,7 +139,7 @@ img {
   color: rgba(66, 66, 66, 0.54);
   font-weight: 600;
   font-size: 10pt;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 14px 25px;
   text-align: center;
   margin-top: 20px;
@@ -215,7 +220,7 @@ img {
   color: #525252;
   font-weight: bold;
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
@@ -569,6 +574,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   width: 171px;
   height: 38px;
   object-fit: cover;
+  opacity: 0.3;
 }
 @media only screen and (max-width: 575px) {
   .footer_visa {
@@ -693,7 +699,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   font-size: 1.8rem;
   color: #fff;
   z-index: 999999;
-  margin-left: 65vw;
+  margin-left: 60vw;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -718,8 +724,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
     top: 6px !important;
     color: #525252;
     font-weight: 500 !important;
-    font-size: 16px !important;
-    font-family: Helvetica, sans-serif;
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
   }
   .line {
@@ -730,7 +736,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
     height: 55px;
   }
   #motion_text2 {
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 600;
   }
   #motion_graybar1,
   #motion_graybar2 {
@@ -743,7 +750,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
   #motion_text3 {
     font-size: 10px;
-    font-family: unset;
+    font-family: 'Poppins', sans-serif;
   }
   #beats_catalogue_container {
     margin: 5vmin !important;
@@ -766,7 +773,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   #pricing_info_cards_container {
     padding: 0px !important;
     width: 125vw !important;
-    margin: 0px -81px !important;
+    margin: 0px -28% !important;
   }
   [id^="pricing_info_card"] {
     margin: 0 !important;
@@ -783,5 +790,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
   }
   #contact_title_container {
     height: 40px !important;
+    margin-top: -10%;
+    margin-bottom: -5%;
+  }
+  #navbar_box  {
+    padding: 10px !important;
   }
 }

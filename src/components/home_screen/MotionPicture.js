@@ -25,21 +25,19 @@ export class MotionPicture extends Component {
             <div id="motion_text">
 
               {/* FIRST PHRASE */}
-              <span id="motion_text1"> 
+              <div id="motion_text1"> 
               CURRENT SALE 
-              <br />
+              </div> 
               <img src={grayBar} id="motion_graybar1"/>
-              </span> 
-
               {/* SECOND PHRASE */}
               <div id="motion_break"> </div> 
-              <span id="motion_text2"> BUY 1 GET 1 FREE </span> <br /> 
+              <div id="motion_text2"> BUY 1 GET 1 FREE </div>
               <img src={grayBar} id="motion_graybar2"/> 
-              <br />
+             
 
               {/* THIRD PHRASE */}
-              <span id="motion_text3"> ADD TWO OF ANY LICENSE TYPE TO YOUR CART TO APPLY THE DISCOUNT! </span> 
-              <br />
+              <div id="motion_text3"> ADD TWO OF ANY LICENSE TYPE TO YOUR CART TO APPLY THE DISCOUNT! </div> 
+        
 
               {/* VIEW CATALOG BUTTON */}
               <button onClick={this.catalog_scrollFunction} id="motion_view_catalog"> VIEW CATALOG </button>
