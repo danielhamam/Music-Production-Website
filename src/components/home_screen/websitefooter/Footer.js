@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import paymentPic from '../../../images/visa_mastercard_logo.png';
 
 class Footer extends Component {
   render() {
@@ -13,7 +14,7 @@ class Footer extends Component {
             </div>
             <div>
               <img
-                src="/visa-mastercard-paypal-1.webp"
+                src={paymentPic}
                 alt=""
                 className="footer_visa"
               />

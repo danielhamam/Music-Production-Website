@@ -69,7 +69,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 75vh;
+  height: 66vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -588,7 +588,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   width: 171px;
   height: 38px;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 @media only screen and (max-width: 575px) {
   .footer_visa {

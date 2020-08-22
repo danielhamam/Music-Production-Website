@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 // import {Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-bootstrap';
+import logoPic from '../../images/hamam_logo.jpg';
+import logoPic2 from '../../images/HamamLogo2.jpg';
+import logoPic3 from '../../images/HamamLogo3.jpg';
+
 import {
   FaSoundcloud,
   FaTwitter,
@@ -48,9 +52,14 @@ class Navbar extends Component {
         <div style={{ background: "#2f2e2e" }}>
           <div className="social p-0" style={{margin: "0px 85px", height: 35 }}>
             <div className="social container">
-              <span style={{fontSize: 11}}>
+              {/* <span style={{fontSize: 11}}>
                 CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO
                 YOUR CART TO APPLY DISCOUNT!
+              </span> */}
+                <span style={{fontSize: 11}}>
+                {/* CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO
+                YOUR CART TO APPLY DISCOUNT! */}
+                FOR ANY BUSINESS INQUIRIES, PLEASE LEAVE A MESSAGE IN THE CONTACT SECTION BELOW OR FOLLOW MY SOCIAL MEDIA. THANKS FOR SHOPPING, ARTISTS!
               </span>
               <div className="d-none d-md-block">
                 <a href="https://www.soundcloud.com/prodbyhamam" >
@@ -59,15 +68,15 @@ class Navbar extends Component {
                 <a href="https://www.twitter.com/danielhamam" >
                   <FaTwitter className="mx-1 iconsSocial" style={{fontSize: 16}}/>
                 </a>
-                <a href="https://www.google.com" >
+                <a href="https://www.youtube.com/channel/UCySwy0mZKu9d_eWcyY6cGAQ?view_as=subscriber" >
                   <FaYoutube className="mx-1 iconsSocial" style={{fontSize: 16}}/>
                 </a>
                 <a href="https://www.instagram.com/danielhamam" >
                   <FaInstagram className="mx-1 iconsSocial" style={{fontSize: 16}}/>
                 </a>
-                <a href="https://www.google.com" >
+                {/* <a href="https://www.google.com" >
                   <FaSpotify className="mx-1 iconsSocial" style={{fontSize: 16}}/>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -76,7 +85,8 @@ class Navbar extends Component {
           <div className="container d-flex justify-conetnt-start align-items-center flex-row">
             <div className="d-flex d-md-none justify-content-between align-items-center">
               <img
-                src="https://static.wixstatic.com/media/2de498_246231f70b8d47ff8dc8a729352d828c~mv2.png/v1/fill/w_126,h_80,al_c,q_85,usm_0.66_1.00_0.01/wp2487509_edited.webp"
+                // src="https://static.wixstatic.com/media/2de498_246231f70b8d47ff8dc8a729352d828c~mv2.png/v1/fill/w_126,h_80,al_c,q_85,usm_0.66_1.00_0.01/wp2487509_edited.webp"
+                src={logoPic3}
                 style={{ width: "60px", height: "40px" }}
                 className="d-block d-md-none"
               />
@@ -165,7 +175,8 @@ class Navbar extends Component {
 
             <div className="d-md-flex d-none justify-content-start align-items-center">
               <img
-                src="/wp2487509_edited.webp"
+                // src="/wp2487509_edited.webp"
+                src={logoPic3}
                 style={{ width: "63px" }}
                 className="d-none d-md-block"
               />

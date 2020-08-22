@@ -26,17 +26,18 @@ export class MotionPicture extends Component {
 
               {/* FIRST PHRASE */}
               <div id="motion_text1"> 
-              CURRENT SALE 
+              BEATS FOR SALE
               </div> 
               <img src={grayBar} id="motion_graybar1"/>
               {/* SECOND PHRASE */}
               <div id="motion_break"> </div> 
-              <div id="motion_text2"> BUY 1 GET 1 FREE </div>
+              <div id="motion_text2"> PROD BY HAMAM </div>
               <img src={grayBar} id="motion_graybar2"/> 
              
 
               {/* THIRD PHRASE */}
-              <div id="motion_text3"> ADD TWO OF ANY LICENSE TYPE TO YOUR CART TO APPLY THE DISCOUNT! </div> 
+              {/* <div id="motion_text3"> ADD TWO OF ANY LICENSE TYPE TO YOUR CART TO APPLY THE DISCOUNT! </div>  */}
+              <div id="motion_text3"> FOR CUSTOM BEATS & INQUIRIES, PLEASE DO NOT HESITATE TO CONTACT ME! </div> 
         
 
               {/* VIEW CATALOG BUTTON */}

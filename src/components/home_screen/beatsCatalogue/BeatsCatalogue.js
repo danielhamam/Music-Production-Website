@@ -23,18 +23,19 @@ export class BeatsCatalogue extends Component {
             style={{ width: "100%", height: "100%" }}
           />
         </div>
-
+        < br />
         <div
           style={{
             width: "100%",
             textAlign: "center",
-            marginTop: "-25px",
+            marginTop: "-15px",
+            color: "#5F5E61",
           }}
           className='d-none d-md-block'
         >
-          *Audio files and contracts are delivered upon payment completion. All
-          sales are final and non-refundable. By purchasing you agree to these
-          terms.
+          
+          <i> * Audio files are delivered upon completion of payment. For exclusive rights and custom beats, please reach out to me! * </i>
+          {/* * FOR THE PURCHASE OF EXCLUSIVE RIGHTS OR CUSTOM BEATS, REACH OUT TO ME THROUGH THE CONTACT SECTION OR THROUGH SOCIAL MEDIA * */}
         </div>
       </>
     );
