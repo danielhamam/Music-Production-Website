@@ -59,7 +59,7 @@ class Navbar extends Component {
                 <span style={{fontSize: 11}}>
                 {/* CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO
                 YOUR CART TO APPLY DISCOUNT! */}
-                FOR ANY BUSINESS INQUIRIES, PLEASE LEAVE A MESSAGE IN THE CONTACT SECTION BELOW OR FOLLOW MY SOCIAL MEDIA. THANKS FOR SHOPPING, ARTISTS!
+                FOR ANY BUSINESS INQUIRIES, PLEASE LEAVE A MESSAGE IN THE CONTACT SECTION BELOW OR FOLLOW MY SOCIAL MEDIA!
               </span>
               <div className="d-none d-md-block">
                 <a href="https://www.soundcloud.com/prodbyhamam" >

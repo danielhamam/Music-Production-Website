@@ -14,31 +14,31 @@ export class PricingInfoCard3 extends Component {
           </div>
           <div className="main">
             <div className="text-center">
-              <div className="price">$49.99</div>
+              <div className="price">$34.99</div>
             </div>
             <div className="text-muted text-uppercase sub-text">
               non exclusive
             </div>
             <ul className="px-4 py-1">
               <li className="border-bottom">
-                <div className="text-muted sub-text my-2">MP3</div>
+                <div className="text-muted sub-text my-2">MP3/WAV/TRACKOUTS</div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">Untagged</div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">
-                  Distribute 3,000 Units
+                  Distribute 20,000 Units
                 </div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">
-                  1,000,000 Monetized <br /> Audio Streams
+                  2,000,000 Monetized <br /> Audio Streams
                 </div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">
-                  500,000 Monetize <br /> Video Streams
+                  2,500,000 Monetize <br /> Video Streams
                 </div>
               </li>
               <li className="border-bottom">

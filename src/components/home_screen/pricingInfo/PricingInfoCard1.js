@@ -10,7 +10,7 @@ export class PricingInfoCard1 extends Component {
           </div>
           <div className="main">
             <div className="text-center">
-              <div className="price">$12.99</div>
+              <div className="price">$9.99</div>
             </div>
             <div className="text-muted text-uppercase sub-text">
               non exclusive
@@ -23,13 +23,13 @@ export class PricingInfoCard1 extends Component {
                 <div className="text-muted sub-text my-2">Untagged</div>
               </li>
               <li className="border-bottom">
-                <div className="text-muted sub-text my-2">Distribute 3,000 Units</div>
+                <div className="text-muted sub-text my-2">Distribute 5,000 Units</div>
               </li>
               <li className="border-bottom">
-                <div className="text-muted sub-text my-2">1,000,000 Monetized <br /> Audio Streams</div>
+                <div className="text-muted sub-text my-2">500,000 Monetized <br /> Audio Streams</div>
               </li>
               <li className="border-bottom">
-                <div className="text-muted sub-text my-2">500,000 Monetize <br /> Video Streams</div>
+                <div className="text-muted sub-text my-2">1,000,000 Monetize <br /> Video Streams</div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">Use For a Single <br/> Commercial Release </div>

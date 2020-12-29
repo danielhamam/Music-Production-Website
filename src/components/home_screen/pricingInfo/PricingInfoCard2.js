@@ -21,14 +21,14 @@ export class PricingInfoCard2 extends Component {
             </div>
             <ul className="px-4 py-1">
               <li className="border-bottom">
-                <div className="text-muted sub-text my-2">MP3</div>
+                <div className="text-muted sub-text my-2">MP3/WAV</div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">Untagged</div>
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">
-                  Distribute 3,000 Units
+                  Distribute 10,000 Units
                 </div>
               </li>
               <li className="border-bottom">
@@ -38,7 +38,7 @@ export class PricingInfoCard2 extends Component {
               </li>
               <li className="border-bottom">
                 <div className="text-muted sub-text my-2">
-                  500,000 Monetize <br /> Video Streams
+                  1,500,000 Monetize <br /> Video Streams
                 </div>
               </li>
               <li className="border-bottom">
