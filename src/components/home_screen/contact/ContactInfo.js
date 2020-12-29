@@ -1,44 +1,16 @@
 import React, { Component } from "react";
-import axios from "axios";
-import { API_URL } from "../../../config/";
-import Swal from "sweetalert2";
+// import axios from "axios";
+// import { API_URL } from "../../../config/";
+// import Swal from "sweetalert2";
+
 export class ContactInfo extends Component {
   state = {
     name: "",
     email: "",
     subject: "",
     message: "",
-    loading: false
   };
-  handleSubmitForm = (e) => {
-    e.preventDefault();
-    this.setState({loading: true})
-    axios
-      .post(
-        `${API_URL}contact/create`,
-        {
-          name: this.state.name,
-          email: this.state.email,
-          subject: this.state.subject,
-          message: this.state.message
-        }
-      )
-      .then(async (response) => {
-        Swal.fire("Message sent successfully", "", "success");
-        this.setState({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        })
-      })
-      .catch((err) => {
-        Swal.fire("Something went wrong", "", "error");
-      })
-      .finally(()=>{
-        this.setState({loading: false})
-      })
-  };
+
   render() {
     const { name, email, subject, message, loading } = this.state;
 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import motionGif from '../../images/wallpaper.gif';
-import motionGif2 from '../../images/newimage.gif';
-import motionGif4 from '../../images/newimage_1.gif';
-import motionPic from '../../images/targetGif.gif';
+// import motionGif from '../../images/wallpaper.gif';
+// import motionGif2 from '../../images/newimage.gif';
+// import motionGif4 from '../../images/newimage_1.gif';
+// import motionPic from '../../images/targetGif.gif';
 
 import grayBar from '../../images/gray_bar.png';
 import catalog_scrollFunction from "../navbar/Navbar.js"
