@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c6a06b21.chunk.css",
+    "main.js": "/static/js/main.482284dd.chunk.js",
+    "main.js.map": "/static/js/main.482284dd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.22818307.js",
+    "runtime-main.js.map": "/static/js/runtime-main.22818307.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.f2315240.chunk.js": "/static/js/2.f2315240.chunk.js",
+    "static/js/2.f2315240.chunk.js.map": "/static/js/2.f2315240.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e502eabb0c85215f7fd64e097de2a730.js": "/precache-manifest.e502eabb0c85215f7fd64e097de2a730.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.c6a06b21.chunk.css.map": "/static/css/main.c6a06b21.chunk.css.map",
+    "static/js/2.f2315240.chunk.js.LICENSE.txt": "/static/js/2.f2315240.chunk.js.LICENSE.txt",
+    "static/media/HamamLogo2.jpg": "/static/media/HamamLogo2.5dd3fffc.jpg",
+    "static/media/HamamLogo3.jpg": "/static/media/HamamLogo3.6d07f3ec.jpg",
+    "static/media/hamam_logo.jpg": "/static/media/hamam_logo.b04e55c1.jpg",
+    "static/media/newimage.gif": "/static/media/newimage.f434e86c.gif",
+    "static/media/newimage_1.gif": "/static/media/newimage_1.4e47f624.gif",
+    "static/media/targetGif.gif": "/static/media/targetGif.98d58d1c.gif",
+    "static/media/visa_mastercard_logo.png": "/static/media/visa_mastercard_logo.181fa724.png",
+    "static/media/wallpaper.gif": "/static/media/wallpaper.0c01a73f.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22818307.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.f2315240.chunk.js",
+    "static/css/main.c6a06b21.chunk.css",
+    "static/js/main.482284dd.chunk.js"
+  ]
+}
