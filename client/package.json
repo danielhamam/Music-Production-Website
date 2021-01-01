@@ -1,5 +1,6 @@
 {
   "name": "beats-website",
+  "homepage": "http://prodbyhamam.com/",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
