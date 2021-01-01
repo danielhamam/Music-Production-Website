@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31e2957d.chunk.css",
+    "main.js": "/static/js/main.6b6c6038.chunk.js",
+    "main.js.map": "/static/js/main.6b6c6038.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.22818307.js",
+    "runtime-main.js.map": "/static/js/runtime-main.22818307.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.fadef199.chunk.js": "/static/js/2.fadef199.chunk.js",
+    "static/js/2.fadef199.chunk.js.map": "/static/js/2.fadef199.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9a8c53dcaa91c7dc1e052ab4e1fa6a1d.js": "/precache-manifest.9a8c53dcaa91c7dc1e052ab4e1fa6a1d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.31e2957d.chunk.css.map": "/static/css/main.31e2957d.chunk.css.map",
+    "static/js/2.fadef199.chunk.js.LICENSE.txt": "/static/js/2.fadef199.chunk.js.LICENSE.txt",
+    "static/media/HamamLogo2.jpg": "/static/media/HamamLogo2.5dd3fffc.jpg",
+    "static/media/HamamLogo3.jpg": "/static/media/HamamLogo3.6d07f3ec.jpg",
+    "static/media/hamam_logo.jpg": "/static/media/hamam_logo.b04e55c1.jpg",
+    "static/media/project_layout.css": "/static/media/newimage_1.4e47f624.gif",
+    "static/media/visa_mastercard_logo.png": "/static/media/visa_mastercard_logo.181fa724.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22818307.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.fadef199.chunk.js",
+    "static/css/main.31e2957d.chunk.css",
+    "static/js/main.6b6c6038.chunk.js"
+  ]
+}
