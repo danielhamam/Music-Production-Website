@@ -6,12 +6,16 @@ const nodemailer = require('nodemailer');
 const cors  = require('cors');
 const app = express();
 
+const PORT = process.env.PORT || 3001;
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(cors());
-app.get('/', () => {
-    resizeBy.send('welcome to my forma');
-});
+// app.get('/', (req, res) => {
+//     res.send('welcome to my forma');
+// });
+
+app.use(express.static('public')); // requesting static file index.html, return to client.
 
 app.post('/api/forma', (req, res) => {
     console.log("here")
@@ -57,17 +61,11 @@ app.post('/api/forma', (req, res) => {
 
 });
 
-
-const PORT = process.env.PORT ||3001;
-app.listen(PORT, () => {
-    console.log(`Server starting on port ${PORT}`);
+app.listen(PORT, function(error) {
+    if (error) {
+        console.log("Something went wrong", error);
+    }
+    else {
+        console.log(`Server starting on port ${PORT}`);
+    }
 })
-
-// const exphbs = require('express-handlebars');
-// const app = express();
-
-// const express = require('express')
-// const log = console.log;
-// const path = require('path');
-// const PORT = 8080;
-// app.listen(PORT, () => log('Server is starting on PORT, ', 8080));
