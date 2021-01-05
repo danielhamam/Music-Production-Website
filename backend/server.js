@@ -11,11 +11,10 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(cors());
-// app.get('/', (req, res) => {
-//     res.send('welcome to my forma');
-// });
+console.log(process.env)
 
 app.use(express.static('public')); // requesting static file index.html, return to client.
+
 
 app.post('/api/forma', (req, res) => {
     console.log("here")
@@ -24,8 +23,8 @@ app.post('/api/forma', (req, res) => {
         service: 'gmail',
         // port : 465,
         auth: {
-            user : 'prodbyhamam@gmail.com',
-            pass: 'hamam2314'
+            user : 'hamamwebsite@gmail.com',
+            pass: 'hamamproduction2314'
         }
     });
     let mailOptions = {

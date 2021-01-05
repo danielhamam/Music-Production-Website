@@ -7,7 +7,7 @@
 // import Login from "./admin/views/Login";
 // import Dashboard from './admin/views/dashboard';
 
-import HomeScreen from "./components/home_screen/HomeScreen";
+import HomeScreen from "./components/home_screen/HomeScreen.js";
 import React, { Component } from "react";
 
 const AppScreen = {
