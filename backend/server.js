@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(cors());
-console.log(process.env)
 
 app.use(express.static('public')); // requesting static file index.html, return to client.
 
