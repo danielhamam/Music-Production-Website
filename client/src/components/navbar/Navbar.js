@@ -59,25 +59,8 @@ class Navbar extends Component {
                 <span style={{fontSize: 11}}>
                 {/* CURRENT SALE: BUY 1 GET 1 FREE! ADD 2 OF ANY LICENSE TYPE TO
                 YOUR CART TO APPLY DISCOUNT! */}
-                FOR ANY BUSINESS INQUIRIES, PLEASE LEAVE A MESSAGE IN THE CONTACT SECTION BELOW OR FOLLOW MY SOCIAL MEDIA!
+                FOR ANY BUSINESS INQUIRIES, PLEASE LEAVE A MESSAGE IN THE CONTACT SECTION BELOW!
               </span>
-              <div className="d-none d-md-block">
-                <a href="https://www.soundcloud.com/prodbyhamam" >
-                  <FaSoundcloud className="mx-1 iconsSocial" style={{fontSize: 16}}/>
-                </a>
-                <a href="https://www.twitter.com/danielhamam" >
-                  <FaTwitter className="mx-1 iconsSocial" style={{fontSize: 16}}/>
-                </a>
-                <a href="https://www.youtube.com/channel/UCySwy0mZKu9d_eWcyY6cGAQ?view_as=subscriber" >
-                  <FaYoutube className="mx-1 iconsSocial" style={{fontSize: 16}}/>
-                </a>
-                <a href="https://www.instagram.com/danielhamam" >
-                  <FaInstagram className="mx-1 iconsSocial" style={{fontSize: 16}}/>
-                </a>
-                {/* <a href="https://www.google.com" >
-                  <FaSpotify className="mx-1 iconsSocial" style={{fontSize: 16}}/>
-                </a> */}
-              </div>
             </div>
           </div>
         </div>
